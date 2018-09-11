@@ -1,1 +1,1 @@
-# Boilerplate NodeJS
+# Meteo bot

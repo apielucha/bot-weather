@@ -1,11 +1,12 @@
 {
-  "name": "boilerplate-nodejs",
+  "name": "meteo-bot",
   "version": "1.0.0",
-  "description": "Boilerplate for NodeJS server using Babel and ESLint.",
+  "description": "Simple chatbot using Google's DialogFlow to know the weather.",
   "main": "src/app.js",
   "scripts": {
     "build": "./bin/build",
     "dev": "./bin/dev",
+    "flow": "./node_modules/.bin/flow",
     "lint": "./bin/lint",
     "preinstall": "./bin/preinstall",
     "start": "./bin/start",
@@ -13,20 +14,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/apielucha/boilerplate-nodejs.git"
+    "url": "git+ssh://git@github.com/apielucha/meteo-bot.git"
   },
   "keywords": [
     "nodejs",
-    "server",
     "babel",
-    "eslint"
+    "eslint",
+    "flow",
+    "dialogflow"
   ],
   "author": "Alexandre Pielucha",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/apielucha/boilerplate-nodejs/issues"
+    "url": "https://github.com/apielucha/meteo-bot/issues"
   },
-  "homepage": "https://github.com/apielucha/boilerplate-nodejs#readme",
+  "homepage": "https://github.com/apielucha/meteo-bot#readme",
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
     "dotenv": "^6.0.0"
@@ -34,20 +36,34 @@
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
+    "@babel/node": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "babel-eslint": "^9.0.0",
     "chai": "^4.1.2",
     "eslint": "^5.5.0",
     "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-flowtype": "^2.50.0",
     "eslint-plugin-import": "^2.14.0",
+    "flow-bin": "^0.80.0",
     "mocha": "^5.2.0",
     "nodemon": "^1.18.4"
   },
   "babel": {
     "presets": [
-      "@babel/preset-env"
+      "@babel/preset-env",
+      "@babel/preset-flow"
     ]
   },
   "eslintConfig": {
-    "extends": "airbnb-base"
+    "parser": "babel-eslint",
+    "extends": [
+      "airbnb-base",
+      "plugin:flowtype/recommended"
+    ],
+    "plugins": [
+      "flowtype"
+    ]
   }
 }

@@ -2,7 +2,8 @@
 
 createFileIfNotExists() {
   if [ -f $1 ]; then
-    echo "File $1 already exists."
+    # echo "File $1 already exists."
+    return
   else
     if [ -f $2 ]; then
       cp $2 $1
