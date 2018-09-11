@@ -1,5 +1,5 @@
 {
-  "name": "meteo-bot",
+  "name": "bot-weather",
   "version": "1.0.0",
   "description": "Simple chatbot using Google's DialogFlow to know the weather.",
   "main": "src/app.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/apielucha/meteo-bot.git"
+    "url": "git+ssh://git@github.com:apielucha/bot-weather.git"
   },
   "keywords": [
     "nodejs",
@@ -26,9 +26,9 @@
   "author": "Alexandre Pielucha",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/apielucha/meteo-bot/issues"
+    "url": "https://github.com/apielucha/bot-weather/issues"
   },
-  "homepage": "https://github.com/apielucha/meteo-bot#readme",
+  "homepage": "https://github.com/apielucha/bot-weather#readme",
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
     "dotenv": "^6.0.0"
