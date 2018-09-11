@@ -1,0 +1,53 @@
+{
+  "name": "boilerplate-nodejs",
+  "version": "1.0.0",
+  "description": "Boilerplate for NodeJS server using Babel and ESLint.",
+  "main": "src/app.js",
+  "scripts": {
+    "build": "./bin/build",
+    "dev": "./bin/dev",
+    "lint": "./bin/lint",
+    "preinstall": "./bin/preinstall",
+    "start": "./bin/start",
+    "test": "./bin/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/apielucha/boilerplate-nodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "server",
+    "babel",
+    "eslint"
+  ],
+  "author": "Alexandre Pielucha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apielucha/boilerplate-nodejs/issues"
+  },
+  "homepage": "https://github.com/apielucha/boilerplate-nodejs#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "dotenv": "^6.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "chai": "^4.1.2",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.4"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base"
+  }
+}
