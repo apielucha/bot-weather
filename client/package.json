@@ -1,71 +1,22 @@
 {
-  "name": "bot-weather",
-  "version": "1.0.0",
-  "description": "Simple chatbot using Google's DialogFlow to know the weather.",
+  "name": "client",
+  "description": "Client app to test DialogFlow API.",
   "main": "src/app.js",
   "scripts": {
-    "build": "./bin/build",
+    "build": "../bin/build src dist",
     "dev": "./bin/dev",
-    "flow": "./node_modules/.bin/flow",
-    "lint": "./bin/lint",
+    "flow": "../bin/flow",
+    "lint": "../bin/lint src",
     "preinstall": "./bin/preinstall",
     "start": "./bin/start",
-    "test": "./bin/test"
+    "test": "../bin/test tests"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com:apielucha/bot-weather.git"
-  },
-  "keywords": [
-    "nodejs",
-    "babel",
-    "eslint",
-    "flow",
-    "dialogflow"
-  ],
-  "author": "Alexandre Pielucha",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/apielucha/bot-weather/issues"
-  },
-  "homepage": "https://github.com/apielucha/bot-weather#readme",
   "dependencies": {
-    "@babel/polyfill": "^7.0.0",
     "dialogflow": "^0.6.0",
     "dotenv": "^6.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
     "@babel/node": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "@babel/preset-flow": "^7.0.0",
-    "@babel/register": "^7.0.0",
-    "babel-eslint": "^9.0.0",
-    "chai": "^4.1.2",
-    "eslint": "^5.5.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-flowtype": "^2.50.0",
-    "eslint-plugin-import": "^2.14.0",
-    "flow-bin": "^0.80.0",
-    "mocha": "^5.2.0",
-    "nodemon": "^1.18.4",
-    "nyc": "^13.0.1"
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-flow"
-    ]
-  },
-  "eslintConfig": {
-    "parser": "babel-eslint",
-    "extends": [
-      "airbnb-base",
-      "plugin:flowtype/recommended"
-    ],
-    "plugins": [
-      "flowtype"
-    ]
+    "nodemon": "^1.18.4"
   }
 }
