@@ -6,7 +6,7 @@
     "build": "../bin/build src dist",
     "dev": "./bin/dev",
     "flow": "../bin/flow",
-    "lint": "../bin/lint src",
+    "lint": "../node_modules/.bin/eslint ./src/**/*.js",
     "preinstall": "./bin/preinstall",
     "start": "./bin/start",
     "test": "../bin/test tests"
